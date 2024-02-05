@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Filterable Menu</title>
+</head>
+<body>
+    <h2>Choose Items</h2>
+<div class="filter-menu">
+    <button onclick="filterItems('all')">ALL</button>
+    <button onclick="filterItems('shirts')">Shirts</button>
+    <button onclick="filterItems('shoes')">Shoes</button>
+    <button onclick="filterItems('hats')">Hats</button>
+</div>
+    
+<div class="item-container" id="itemContainer">
+    <div class="item shirts"><img src="/Assets/shirt1.jpg"></div>
+    <div class="item shoes"><img src="/Assets/shoes.jpg" ></div>
+    <div class="item hats"><img src="/Assets/hat1.jpg" ></div>
+    <div class="item shirts"><img src="/Assets/shirt2.jpg" ></div>
+    <div class="item shoes"><img src="/Assets/shoes1.jpg" ></div>
+    <div class="item hats"><img src="/Assets/hat2.jpg" ></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

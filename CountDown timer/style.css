@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: url(/images/background.png);
+}
+nav img{
+    height: 40px;
+    margin: 30px 0px 0px 60px;
+    cursor: pointer;
+}
+h1 span{
+    color: hsl(0, 7%, 15%);
+}
+.rocket img{
+    height: 200px;
+    position: absolute;
+    right: 10%;
+    bottom: 0px;
+    animation: rocket 2s infinite;
+}
+
+.content p{
+    position: absolute;
+    font-size: 1.1rem;
+    top: 35%;
+    left: 5%;
+}
+.content h1{
+    position: absolute;
+font-size: 2.2rem;
+    top:40%;
+    left: 5%;
+}
+.launch-time{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    position: absolute;
+    top:50%;
+    left: 5%;
+}
+.launch-time p{
+    font-size: 3rem;
+}
+.launch-time span{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+button{
+    background: none;
+    border: 2px solid;
+    padding: 10px;
+    position: absolute;
+    bottom:25%;
+    left: 5%;
+    cursor: pointer;
+}
+button:active{
+    transform: scale(0.9);
+}
+@keyframes rocket {
+    0%{
+        bottom:0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
